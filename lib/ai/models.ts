@@ -8,18 +8,13 @@ interface ChatModel {
 
 export const chatModels: Array<ChatModel> = [
   {
-    id: 'chat-model-small',
-    name: 'Small model',
-    description: 'Small model for fast, lightweight tasks',
+    id: 'gpt-4o-mini',
+    name: 'GPT-4o-mini',
+    description: 'OpenAI\'s latest and most powerful model',
   },
   {
-    id: 'chat-model-large',
-    name: 'Large model',
-    description: 'Large model for complex, multi-step tasks',
-  },
-  {
-    id: 'chat-model-reasoning',
-    name: 'Reasoning model',
-    description: 'Uses advanced reasoning',
+    id: 'google/gemini-2.0-pro-exp-02-05:free',
+    name: 'Gemini-2.0-pro-exp-02-05',
+    description: 'Google\'s latest and most powerful model',
   },
 ];

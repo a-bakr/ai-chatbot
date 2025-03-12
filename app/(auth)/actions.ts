@@ -43,12 +43,12 @@ export const login = async (
 
 export interface RegisterActionState {
   status:
-    | 'idle'
-    | 'in_progress'
-    | 'success'
-    | 'failed'
-    | 'user_exists'
-    | 'invalid_data';
+  | 'idle'
+  | 'in_progress'
+  | 'success'
+  | 'failed'
+  | 'user_exists'
+  | 'invalid_data';
 }
 
 export const register = async (
@@ -63,6 +63,7 @@ export const register = async (
 
     const [user] = await getUser(validatedData.email);
 
+    console.log('==================Creating user==================');
     if (user) {
       return { status: 'user_exists' } as RegisterActionState;
     }
